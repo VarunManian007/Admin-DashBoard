@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <br>
+      <div>
+          <h2><strong>Company Name</strong>
+                <button type="button" class="btn btn-warning">STATUS</button>
+                <p style="float: right; color: blue;font-size: 20px" class="mail"><u>Delete</u></p>
+          </h2>
+          <p>{{date|date}} | XYZ</p>
+          <p style="font-size: 20px"><strong>Company Detail
+                <button type="button" class="btn btn-default btn-sm" (click)="inputChange()">
+                    <span class="glyphicon glyphicon-edit"></span> Edit
+                </button>
+          </strong></p>
+          
+          <div class="w3-row w3-border">
+                <div class="w3-quarter w3-container w3-red">
+                  <p style="font-size: 15px"><strong>Company Type</strong></p>
+                  <p *ngIf="!cd">Public</p>
+                  <input *ngIf="cd" placeholder="Public" type="text">
+                </div>
+                <div class="w3-quarter w3-container">
+                    <p><strong>Company Website</strong></p>
+                    <p class="mail" style="color: blue;" *ngIf="!cd"><u>Http://www.xyz@abc.com</u></p>
+                    <input *ngIf="cd" placeholder="Http://www.xyz@abc.com" type="text">
+                </div>
+                <div class="w3-quarter w3-container">
+                    <p><strong>Business Address</strong></p>
+                    <p *ngIf="!cd">Address1</p>
+                    <input *ngIf="cd" placeholder="Address1" type="text">
+                </div>
+                <div class="w3-quarter w3-container">
+                    <p><strong>Zip Code</strong></p>
+                    <p *ngIf="!cd">60007,60018,600022</p>
+                    <input *ngIf="cd" placeholder="60007,60018,600022" type="text">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+                <p style="font-size: 20px"><strong>Company Person Detail
+                        <button type="button" class="btn btn-default btn-sm" (click)=inputChange1()>
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+                        </button>
+                  </strong></p>
+                  
+                  <div class="w3-row w3-border">
+                        <div class="w3-quarter w3-container w3-red">
+                          <p style="font-size: 15px"><strong>Contact Person</strong></p>
+                          <p *ngIf="!cpd">ABC</p>
+                          <input *ngIf="cpd" placeholder="ABC" type="text">
+                        </div>
+                        <div class="w3-quarter w3-container">
+                            <p><strong>Contact Number</strong></p>
+                            <p *ngIf="!cpd">123456</p>
+                            <input *ngIf="cpd" placeholder="123456" type="text">
+                        </div>
+                        <div class="w3-quarter w3-container">
+                            <p><strong>Email Address</strong></p>
+                            <p class="mail" style="color: blue;" *ngIf="!cpd"><u>xyz@gmail.com</u></p>
+                            <input *ngIf="cpd" placeholder="xyz@gmail.com" type="text">
+                        </div>
+                    </div>
+        </div>
+         <hr>   
+        
+         <div>
+                <p style="font-size: 20px"><strong>Service Detail
+                        <button type="button" class="btn btn-default btn-sm" (click)="inputChange2()">
+                            <span class="glyphicon glyphicon-edit"></span> Edit
+                        </button>
+                  </strong></p>
+                  
+                  <div class="w3-row w3-border">
+                        <div class="w3-quarter w3-container w3-red">
+                          <p *ngIf="!sd">Service Name</p>
+                          <input *ngIf="sd" placeholder="Service Name" type="text">
+                          <p *ngIf="!sd">Service Name</p>
+                          <input *ngIf="sd" placeholder="Service Name" type="text">
+                          <p *ngIf="!sd">Service Name</p>
+                          <input *ngIf="sd" placeholder="Service Name" type="text">
+                          <p *ngIf="!sd">Service Name</p>
+                          <input *ngIf="sd" placeholder="Service Name" type="text">
+                        </div>
+                        <div class="w3-quarter w3-container">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                        </div>
+                        <div class="w3-quarter w3-container">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                        </div>
+                        <div class="w3-quarter w3-container">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                                <p *ngIf="!sd">Service Name</p>
+                                <input *ngIf="sd" placeholder="Service Name" type="text">
+                        </div>
+                        <button type="button" style="float:right;" class="btn btn-success" (click)="saved()">Save</button>
+                    </div>
+                    
+        </div>
+        <br>
+  </body>
+  </html>

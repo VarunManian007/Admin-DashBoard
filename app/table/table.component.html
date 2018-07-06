@@ -1,0 +1,158 @@
+<div class="scroll-table-container" *ngIf="alp">
+  <table>
+    <thead>
+      <tr>
+        
+        <th scope="col">Company Name</th>
+        <th scope="col">Company Type</th>
+        <th scope="col">Company Website</th>
+        <th scope="col">Email</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Business Address</th>
+        <th scope="col">List of Services</th>
+        <th scope="col">Status</th>
+        
+      </tr>
+    </thead>
+    
+    <tbody >
+      <tr *ngFor="let i of Company;let k=index">
+         
+          <td>{{ i.CName }}</td>
+          <td>{{ i.Ctype }}</td>
+          <td>{{ i.CWebsite }}</td>
+          <td>{{ i.Email }}</td>
+          <td>{{ i.Contact }}</td>
+          <td>{{ i.Badd }}</td>
+          <td>{{ i.Service }}</td>
+        <td>
+            <select  (change)="selectChangeHandler($event,i.Contact,k)">
+                <option>--Select--</option>
+                <option value="Progress">Progress</option>
+                <option value="Approved">Approved</option>
+                <option value="Rejected">Rejected</option>
+                
+            </select>
+             {{i.status}} 
+                
+        </td>
+      
+      </tr>
+     
+    </tbody>
+    <!-- <tbody *ngIf="vp">
+      <tr *ngFor="let p of prog">
+          <td>{{p.CName}}</td>
+          <td>{{p.Ctype}}</td>
+          <td>{{p.CWebsite}}</td>
+          <td>{{p.Email}}</td>
+          <td>{{p.Contact}}</td>
+          <td>{{p.Badd}}</td>
+          <td>{{p.Service}}</td>
+          <td>{{p.status}}</td>
+      </tr>
+    </tbody> -->
+    
+  </table>
+</div>
+<br>
+<div class="scroll-table-container" *ngIf="vp && !alp && !ap && !rp">
+      <table>
+        <thead>
+          <tr>
+            
+            <th scope="col">Company Name</th>
+            <th scope="col">Company Type</th>
+            <th scope="col">Company Website</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Business Address</th>
+            <th scope="col">List of Services</th>
+            <th scope="col">Status</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+      <tr *ngFor="let p of prog;">
+         
+          <td>{{p[0]}}</td>
+          <td>{{p[1]}}</td>
+          <td>{{p[2]}}</td>
+          <td>{{p[3]}}</td>
+          <td>{{p[4]}}</td>
+          <td>{{p[5]}}</td>
+          <td>{{p[6]}}</td>
+          <td>{{p[7]}}</td>
+      </tr>
+    </tbody>
+    
+  </table>
+</div>
+<div class="scroll-table-container" *ngIf="rp && !alp && !vp && !ap">
+      <table>
+        <thead>
+          <tr>
+            
+            <th scope="col">Company Name</th>
+            <th scope="col">Company Type</th>
+            <th scope="col">Company Website</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Business Address</th>
+            <th scope="col">List of Services</th>
+            <th scope="col">Status</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+      <tr *ngFor="let p of rej;">
+         
+          <td>{{p[0]}}</td>
+          <td>{{p[1]}}</td>
+          <td>{{p[2]}}</td>
+          <td>{{p[3]}}</td>
+          <td>{{p[4]}}</td>
+          <td>{{p[5]}}</td>
+          <td>{{p[6]}}</td>
+          <td>{{p[7]}}</td>
+      </tr>
+    </tbody>
+    
+  </table>
+</div>
+<div class="scroll-table-container" *ngIf="ap && !alp && !vp && !rp">
+      <table>
+        <thead>
+          <tr>
+            
+            <th scope="col">Company Name</th>
+            <th scope="col">Company Type</th>
+            <th scope="col">Company Website</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Business Address</th>
+            <th scope="col">List of Services</th>
+            <th scope="col">Status</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+      <tr *ngFor="let p of appr;">
+         
+          <td>{{p[0]}}</td>
+          <td>{{p[1]}}</td>
+          <td>{{p[2]}}</td>
+          <td>{{p[3]}}</td>
+          <td>{{p[4]}}</td>
+          <td>{{p[5]}}</td>
+          <td>{{p[6]}}</td>
+          <td>{{p[7]}}</td>
+      </tr>
+    </tbody>
+    
+  </table>
+</div>
+        
+
+
+

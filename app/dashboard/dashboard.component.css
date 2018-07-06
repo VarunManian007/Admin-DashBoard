@@ -1,0 +1,132 @@
+.card:hover{
+  border:2px solid black;
+}
+
+
+
+.container-fluid{
+  position: relative;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.scroll-table-container {
+  border:2px solid black; 
+  height: 500px; 
+  overflow: scroll;
+ 
+  }
+
+  
+  .scroll-table, td, th {
+  border-collapse:collapse; 
+  border:1px solid #777; 
+  height: 2px;
+  min-width: 300px;}
+ 
+  table tbody, table thead
+{
+  display: block;
+}
+th{
+  font-size:20px;
+  text-align:center;
+  
+}
+table tbody 
+{
+ 
+ height: 500px;
+}
+
+
+#Progress{
+  color: blue;
+}
+
+#Approved{
+  color: green;
+}
+
+#Rejected{
+  color: red;
+}
+input[type=text]{
+  width: 500px;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image:url('https://www.w3schools.com/howto/searchicon.png'); 
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 0px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: right;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+.lef{
+  float:left;
+  
+}
+.numbers:hover{
+  cursor: pointer;
+}
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
